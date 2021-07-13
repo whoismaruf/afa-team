@@ -5,3 +5,84 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
+/* ~~~~~~~~~~~~ 
+    Header 
+~~~~~~~~~~~~~~*/
+header {
+    background-color: blueviolet;
+    padding: 4vh 7vw;
+}
+/* Nav bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+nav > ul {
+    display: flex;
+}
+.navbar__item {
+    list-style: none;
+    padding-right: 2.5vw;
+}
+.navbar__item > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.13rem;
+}
+.navbar__item > a:hover {
+    color: rgba(214, 205, 205, 0.815);
+}
+
+
+nav > a > button {
+    background-color: #E02C6D;
+    padding: 0.8vh 3.5vw;
+    color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.01em;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+}
+.hero__text > h1, span {
+    color: #FFFFFF;
+    font-size: 3rem;
+
+}
+.hero__text > a {
+    margin: 4vh 0 0 0;
+}
+.hero__text > a > button {
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    border: 0;
+    padding: 2vh 4vw;
+    cursor: pointer;
+}
+.button-hover:hover {
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    background-color: rgb(13, 185, 13);
+}
+.hero__text > a > button:hover > i {
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transform: translateX(10px);
+}
+.hero__image > img {
+    width: 40vw;
+}
